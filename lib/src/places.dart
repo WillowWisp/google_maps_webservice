@@ -582,6 +582,9 @@ class PlacesSearchResult {
 
   final num? rating;
 
+  /// JSON user_ratings_total
+  final num? userRatingsTotal;
+
   @JsonKey(defaultValue: [])
   final List<String> types;
 
@@ -614,6 +617,7 @@ class PlacesSearchResult {
     this.scope,
     this.priceLevel,
     this.rating,
+    this.userRatingsTotal,
     this.vicinity,
   });
 

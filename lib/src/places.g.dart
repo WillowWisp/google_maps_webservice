@@ -62,6 +62,7 @@ PlacesSearchResult _$PlacesSearchResultFromJson(Map<String, dynamic> json) {
     scope: json['scope'] as String?,
     priceLevel: _$enumDecodeNullable(_$PriceLevelEnumMap, json['price_level']),
     rating: json['rating'] as num?,
+    userRatingsTotal: json['user_ratings_total'] as num?,
     vicinity: json['vicinity'] as String?,
   );
 }
@@ -78,6 +79,7 @@ Map<String, dynamic> _$PlacesSearchResultToJson(PlacesSearchResult instance) =>
       'alt_ids': instance.altIds,
       'price_level': _$PriceLevelEnumMap[instance.priceLevel],
       'rating': instance.rating,
+      'user_ratings_total': instance.userRatingsTotal,
       'types': instance.types,
       'vicinity': instance.vicinity,
       'formatted_address': instance.formattedAddress,
