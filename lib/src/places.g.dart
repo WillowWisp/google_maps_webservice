@@ -161,6 +161,7 @@ PlaceDetails _$PlaceDetailsFromJson(Map<String, dynamic> json) {
     reference: json['reference'] as String?,
     icon: json['icon'] as String?,
     rating: json['rating'] as num?,
+    userRatingsTotal: json['user_ratings_total'] as num?,
     openingHours: json['opening_hours'] == null
         ? null
         : OpeningHoursDetail.fromJson(
@@ -192,6 +193,7 @@ Map<String, dynamic> _$PlaceDetailsToJson(PlaceDetails instance) =>
       'international_phone_number': instance.internationalPhoneNumber,
       'price_level': _$PriceLevelEnumMap[instance.priceLevel],
       'rating': instance.rating,
+      'user_ratings_total': instance.userRatingsTotal,
       'scope': instance.scope,
       'types': instance.types,
       'url': instance.url,

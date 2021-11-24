@@ -666,6 +666,9 @@ class PlaceDetails {
 
   final num? rating;
 
+  /// JSON user_ratings_total
+  final num? userRatingsTotal;
+
   final String? scope;
 
   @JsonKey(defaultValue: <String>[])
@@ -701,6 +704,7 @@ class PlaceDetails {
     this.reference,
     this.icon,
     this.rating,
+    this.userRatingsTotal,
     this.openingHours,
     this.priceLevel,
     this.scope,
